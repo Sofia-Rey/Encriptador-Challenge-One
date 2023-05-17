@@ -1,0 +1,385 @@
+#botonCopiar {
+    display: none;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+}
+
+.logo {
+    height: auto; 
+    width: 7%; 
+    margin: 1em auto;
+    display: inline-block;
+    padding-left: 2em;
+    padding-top: 0,5em;
+  }
+
+.caja-encriptar {
+    position: absolute;
+        top: 5%;
+        right: 2.5%;
+        width: 25%;
+        height: 90%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow:  0px 20px 25px 5px black; opacity: 15%; 
+  
+}
+
+.texto-cuadro-encriptar {
+    position: absolute;
+        top: 5%;
+        right: 3%;
+        width: 20%;
+    display:inline-block;
+    text-align: center;
+    margin: 0 2.5%;
+    padding: 17% 19%;
+    vertical-align: center;
+    box-sizing: border-box;
+}
+
+.muneco {
+    position: absolute;
+        top: 20%;
+        right: 1%;
+    height: auto; 
+    width: 50%; 
+}
+
+.mensaje-no-encontrado  {
+    font-weight: bold;
+    font-size: 26px;
+    color: #343A40;
+    line-height: 1.3em;
+    position: absolute;
+    top: 75%;
+}
+
+.ingresa-encriptar {
+    font-size: 22px;
+    color: #495057;
+    position: absolute;
+        top: 90%;
+    line-height: 1.3em;
+}
+
+.container-texto {
+    position: absolute;
+        top: 20%;
+        left: 14%;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: none;
+}
+
+.container-resultado {
+    position: absolute;
+        top: 10%;
+        right: 4.5%;
+    width: 20%;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: #495057;
+    background-color: #F3F5FC;
+    border: none;
+}
+
+.boton-copiar {
+    position: absolute;
+        bottom: 8%;
+        right: 5%;
+        width: 20%;
+        height: 7%;
+    background-color: #D8DFE8;
+    border: #0A3871 solid 1px;
+    border-radius: 20px;
+
+    font-size: 20px;
+    color: #0A3871;
+    text-align: center;
+}
+
+.advertencia-acentos {
+    font-size: 14px;
+    font-weight: 100;
+    color: #495057;
+    position: absolute;
+        top: 80%;
+        left: 15%;
+}
+
+.boton-encriptar {
+    position: absolute;
+        bottom: 8%;
+        left: 13.5%;
+        width: 20%;
+        height: 7%;
+    background-color: #0A3871;
+    border-radius: 20px;
+
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.boton-desencriptar {
+    position: absolute;
+        bottom: 8%;
+        left: 35%;
+        width: 20%;
+        height: 7%;
+    background-color: #D8DFE8;
+    border: #0A3871 solid 1px;
+    border-radius: 20px;
+
+    font-size: 20px;
+    color: #0A3871;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .logo {
+        width: 18%;
+        padding-left: 0.5em; 
+    }
+
+    .caja-encriptar {
+        width: 90%;
+        height: 30%;
+        top: 80%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .mensaje-no-encontrado  {
+        width: 88%;
+        height: 30%;
+        top: 85.5%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .ingresa-encriptar {
+        width: 83%;
+        height: 30%;
+        top: 96%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container-texto {
+        display: flex;
+        position: absolute;
+        top: 25%;
+        width: 80%;
+        height: 20%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+    }
+
+    .container-resultado {
+        width: 80%;
+        height: 20%;
+        top: 77%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .advertencia-acentos {
+        position: fixed;
+        top: 41%;
+        left: 13%;
+        padding: 0;
+    }
+
+
+    .boton-desencriptar {
+        position: fixed;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    
+    }
+   
+
+    .boton-encriptar {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    
+    }
+
+    .boton-copiar {
+        position: fixed;
+        top: 89%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 74%;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .logo {
+        width: 15%;
+        padding-left: 0.3em; 
+        padding-top: 0.5em;
+    }
+
+    .caja-encriptar {
+        width: 90%;
+        height: 30%;
+        top: 80%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .mensaje-no-encontrado  {
+        width: 90%;
+        height: 30%;
+        top: 89%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .ingresa-encriptar {
+        width: 85%;
+        height: 30%;
+        top: 96%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container-texto {
+        display: flex;
+        position: absolute;
+        top: 27%;
+        width: 80%;
+        height: 20%;
+        position: fixed;
+        left: 46%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .container-resultado {
+        width: 80%;
+        height: 20%;
+        top: 77%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .advertencia-acentos {
+        position: fixed;
+        top: 46%;
+        left: 8%;
+        padding: 0;
+    }
+
+
+    .boton-desencriptar {
+        position: fixed;
+        top: 55%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        width: 44%;
+        text-align: center;
+    
+    }
+   
+
+    .boton-encriptar {
+        position: fixed;
+        top: 55%;
+        left: 27%;
+        transform: translate(-50%, -50%);
+        width: 44%;
+        text-align: center;
+    
+    }
+
+    .boton-copiar {
+        position: fixed;
+        top: 89%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 74%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1081px) {
+    .mensaje-no-encontrado  {
+        position: absolute;
+        top: 76%;
+    }
+    
+    .ingresa-encriptar {
+        position: absolute;
+        top: 98%;
+        margin-top: 10%;
+    }
+}
+
+
+@media screen and (min-width:1082px) and (max-width:1600px) {
+        .mensaje-no-encontrado  {
+            position: absolute;
+            top: 78%;
+        }
+        
+        .ingresa-encriptar {
+            position: absolute;
+            top: 98%;
+        }
+}
+    
+
+
+
+
+
+    
+
+
